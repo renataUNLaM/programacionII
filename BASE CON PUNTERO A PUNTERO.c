@@ -18,7 +18,9 @@ void cargaalum(FILE**,t_alumno);
 void modifalum(FILE**,t_alumno);
 void muestraalum(FILE**,t_alumno);
 void menuopc(FILE*);
-
+////////////////////////////////////////////////////////////////////
+// main
+////////////////////////////////////////////////////////////////////
 void main()
 {FILE*basealumno;
 int salida=1;
@@ -32,6 +34,9 @@ scanf("%d",&salida);
     }
 }
 
+////////////////////////////////////////////////////////////////////
+// funciones
+////////////////////////////////////////////////////////////////////
 void cargaalum(FILE**basealumno,t_alumno varreg)
     {
     int salida=1;
@@ -46,7 +51,7 @@ void cargaalum(FILE**basealumno,t_alumno varreg)
         scanf("%d",&varreg.fnac.dd);
         printf("Ingrese mes de nac.: ");
         scanf("%d",&varreg.fnac.mm);
-        printf("Ingrese año de nac.: ");
+        printf("Ingrese aï¿½o de nac.: ");
         scanf("%d",&varreg.fnac.aa);
         printf("Ingrese nota de primero parcial: ");
         scanf("%d",&varreg.p1);
